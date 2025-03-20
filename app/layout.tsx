@@ -1,6 +1,6 @@
+import { Navbar } from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Link from "next/link";
 import React from "react";
 import "./globals.css";
 
@@ -34,20 +34,7 @@ export default function RootLayout({
                 <main
                     className=" mx-auto min-h-screen bg-amber-50 flex flex-col"
                 >
-                    <nav
-                        className=" p-4 shadow-md bg-white sticky top-0 z-10 text-black space-x-7"
-                    >
-                        <Link
-                            href={'/'}
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            href={'/photos'}
-                        >
-                            Photos
-                        </Link>
-                    </nav>
+                    <Navbar />
                     <section
                         className=" flex-1 grid grid-cols-1"
                     >
